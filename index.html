@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Surpresa — uma declaração de amor personalizada</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <svg class="sprite" aria-hidden="true" focusable="false" style="position:absolute;width:0;height:0;overflow:hidden">
+        <symbol id="icon-heart" viewBox="0 0 24 24">
+            <path d="M12 21S3.5 15.6 3.5 9.8C3.5 6.6 5.8 4.4 8.6 4.4c1.8 0 3.3 1 4.4 2.5 1.1-1.5 2.6-2.5 4.4-2.5 2.8 0 5.1 2.2 5.1 5.4 0 5.8-8.5 11.2-10.5 11.2z" fill="currentColor"/>
+        </symbol>
+        <symbol id="icon-check" viewBox="0 0 24 24">
+            <path d="M5 13l4 4L19 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+        </symbol>
+    </svg>
+
+    <div class="ambiente" aria-hidden="true">
+        <svg class="icon"><use href="#icon-heart"/></svg>
+        <svg class="icon"><use href="#icon-heart"/></svg>
+        <svg class="icon"><use href="#icon-heart"/></svg>
+        <svg class="icon"><use href="#icon-heart"/></svg>
+        <svg class="icon"><use href="#icon-heart"/></svg>
+    </div>
+
+    <main class="pagina-vendas">
+        <section class="hero-vendas">
+            <p class="eyebrow">presente digital personalizado</p>
+            <h1>Um site surpresa <em>só para vocês dois</em></h1>
+            <p class="hero-texto">Bilhetes, fotos do casal, motivos pra amar e raspadinhas com mensagens escondidas — tudo num site só seu, pra mandar pra quem você ama.</p>
+            <a class="botao-demo" href="#" id="link-demo" target="_blank" rel="noopener">ver demonstração ao vivo</a>
+        </section>
+
+        <section class="planos" id="planos"></section>
+
+        <section class="como-funciona">
+            <h2>Como funciona</h2>
+            <ol>
+                <li>Escolha o plano e pague pelo Pix.</li>
+                <li>Me chame no WhatsApp e mande as fotos, mensagens e (se for o caso) a música.</li>
+                <li>Em até 48h você recebe o link pronto pra mandar pra essa pessoa especial.</li>
+            </ol>
+        </section>
+    </main>
+
+    <!-- Modal de pagamento -->
+    <div id="modal-pix" class="modal-pix">
+        <div class="modal-pix-conteudo">
+            <button class="modal-pix-fechar" id="fechar-modal" aria-label="Fechar">&times;</button>
+            <h3 id="modal-titulo"></h3>
+            <p class="modal-preco" id="modal-preco"></p>
+            <img id="modal-qr" class="modal-qr" src="" alt="QR code Pix">
+            <p class="modal-dica">Escaneie com o app do seu banco, ou copie o código abaixo (Pix Copia e Cola):</p>
+            <div class="modal-codigo">
+                <code id="modal-codigo-texto"></code>
+                <button id="copiar-codigo" class="botao-copiar">copiar</button>
+            </div>
+            <a id="modal-whatsapp" class="botao-whatsapp" href="#" target="_blank" rel="noopener">já paguei, falar no WhatsApp</a>
+        </div>
+    </div>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
