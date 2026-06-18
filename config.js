@@ -46,7 +46,7 @@ const VENDAS = {
                 "Tudo do plano Completo",
                 "Domínio próprio (ex: seunome.com)",
                 "Fotos ilimitadas",
-                "Suporte para ajustes depois da entrega"
+                "Suporte para modificações depois da entrega"
             ],
             pixImagem: "pix/pix-premium.png",
             pixCodigo: "00020101021126330014br.gov.bcb.pix0111434548898205204000053039865406109.905802BR5922RAFAEL OTAVIO DA SILVA6014BELO HORIZONTE62150511SITEPREMIUM6304669D"
