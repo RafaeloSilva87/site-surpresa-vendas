@@ -1,6 +1,3 @@
-// Link da demonstração ao vivo (versão padrão do template, com placeholders)
-document.getElementById('link-demo').href = 'https://rafaelosilva87.github.io/site-surpresa-demo/';
-
 // ---- Monta os cards de plano a partir do config.js ----
 const planosContainer = document.getElementById('planos');
 
