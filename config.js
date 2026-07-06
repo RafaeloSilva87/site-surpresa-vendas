@@ -15,7 +15,7 @@ const VENDAS = {
             preco: "29,90",
             descricao: "O site completo: bilhetes, mural de fotos, varal de motivos e raspadinhas surpresa.",
             itens: [
-                "Link próprio (ex: seusite.github.io)",
+                "Domínio próprio (ex: seunome.com)",
                 "Até 8 fotos no mural",
                 "Bilhetes, motivos e raspadinhas personalizados",
                 "Sem música de fundo"
@@ -42,10 +42,9 @@ const VENDAS = {
             id: "premium",
             nome: "Premium",
             preco: "109,90",
-            descricao: "A experiência completa, com domínio próprio só de vocês dois.",
+            descricao: "A experiência completa: fotos ilimitadas e suporte pra ajustar o site depois da entrega.",
             itens: [
                 "Tudo do plano Completo",
-                "Domínio próprio (ex: seunome.com)",
                 "Fotos ilimitadas",
                 "Suporte para modificações depois da entrega"
             ],
