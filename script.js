@@ -33,7 +33,7 @@ document.querySelectorAll('.botao-comprar').forEach(btn => {
         modalQr.src = plano.pixImagem;
         modalCodigoTexto.textContent = plano.pixCodigo;
 
-        modalPainel.href = VENDAS.painel;
+        modalPainel.href = `${VENDAS.painel}?plano=${plano.id}`;
 
         const mensagem = encodeURIComponent(`Oi! Paguei o plano ${plano.nome} (R$ ${plano.preco}) do site surpresa. Vou montar meu site no painel e te mando o arquivo :)`);
         modalWhatsapp.href = `https://wa.me/${VENDAS.whatsapp}?text=${mensagem}`;
