@@ -6,6 +6,7 @@
 
 const VENDAS = {
     whatsapp: "5512974031951", // troque pelo seu número com DDI+DDD, só números
+    painel: "https://rafaelosilva87.github.io/site-surpresa-painel/", // painel onde o cliente monta o site
 
     planos: [
         {

@@ -23,6 +23,7 @@ const modalPreco = document.getElementById('modal-preco');
 const modalQr = document.getElementById('modal-qr');
 const modalCodigoTexto = document.getElementById('modal-codigo-texto');
 const modalWhatsapp = document.getElementById('modal-whatsapp');
+const modalPainel = document.getElementById('modal-painel');
 
 document.querySelectorAll('.botao-comprar').forEach(btn => {
     btn.addEventListener('click', () => {
@@ -32,7 +33,9 @@ document.querySelectorAll('.botao-comprar').forEach(btn => {
         modalQr.src = plano.pixImagem;
         modalCodigoTexto.textContent = plano.pixCodigo;
 
-        const mensagem = encodeURIComponent(`Oi! Acabei de pagar o plano ${plano.nome} (R$ ${plano.preco}) do site surpresa. Segue meu pagamento :)`);
+        modalPainel.href = VENDAS.painel;
+
+        const mensagem = encodeURIComponent(`Oi! Paguei o plano ${plano.nome} (R$ ${plano.preco}) do site surpresa. Vou montar meu site no painel e te mando o arquivo :)`);
         modalWhatsapp.href = `https://wa.me/${VENDAS.whatsapp}?text=${mensagem}`;
 
         modal.classList.add('aberto');

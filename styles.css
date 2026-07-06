@@ -404,6 +404,28 @@ body {
     flex-shrink: 0;
 }
 
+.modal-proximo {
+    font-weight: 700;
+    color: var(--framboesa);
+    margin-bottom: 10px;
+    font-size: 0.95em;
+}
+
+.botao-painel {
+    display: block;
+    background: var(--framboesa);
+    color: var(--creme);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.05em;
+    padding: 15px;
+    border-radius: 999px;
+    margin-bottom: 10px;
+    box-shadow: 0 6px 16px rgba(255, 92, 138, 0.35);
+}
+
+.botao-painel:hover { filter: brightness(1.05); }
+
 .botao-whatsapp {
     display: block;
     background: #25d366;
